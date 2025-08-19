@@ -1,5 +1,6 @@
-package domain;
+package application;
 
+import domain.User;
 import ports.UserRepository;
 
 import java.util.List;
