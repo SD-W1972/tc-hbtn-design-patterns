@@ -11,7 +11,7 @@ public class InMemoryUserRepository implements UserRepository {
 
     public void save(User user)
     {
-        //implemente o metodo
+        database.put(user.getId(), user);
     }
 
     public User findById(String id)
