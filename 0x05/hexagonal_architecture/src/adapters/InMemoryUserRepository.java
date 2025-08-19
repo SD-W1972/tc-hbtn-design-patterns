@@ -3,6 +3,7 @@ package adapters;
 import domain.User;
 import ports.UserRepository;
 import java.util.*;
+import java.util.stream.Collectors;
 
 
 public class InMemoryUserRepository implements UserRepository {
@@ -16,11 +17,11 @@ public class InMemoryUserRepository implements UserRepository {
 
     public User findById(String id)
     {
-        //implemente o metodo
+        return database.get(id);
     }
 
     public List<User> findAll()
     {
-        //implemente o metodo
+        return database.entrySet().stream().collect(Collectors.toList());
     }
 }
