@@ -22,6 +22,6 @@ public class InMemoryUserRepository implements UserRepository {
 
     public List<User> findAll()
     {
-        return database.entrySet().stream().collect(Collectors.toList());
+        return database.values().stream().collect(Collectors.toList());
     }
 }
