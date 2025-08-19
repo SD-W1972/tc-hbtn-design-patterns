@@ -1,0 +1,20 @@
+O que é Arquitetura Hexagonal e por quem ela foi criada?
+
+Arquitetura hexagonal, também chamada de arquitetura de portas e adaptadores, é um padrão de projeto criado por Alistair Cockburn.
+
+
+Quais são os benefícios e recursos que Arquitetura Hexagonal fornece?
+
+O maior benefício da arquitetura hexagonal é o desacoplamento da regra de negócio e a infraestrutura do projeto. No modelo hexagonal, nós isolamos o domain e usamos adaptadores de saída e entrada para conexão com a classes de infraestrutura, db e ui/ux.
+Esse padrão de design proporciona inversão de dependencia, facilita significativamente os testes da aplicação (pois permite que a mesma seja executada sem quaisquer dependencias externas) e possibilita mudanças de qualquer tecnologia referente à infraestrutura do sistema sem afetar a lógica de negócio, além de tornar o projeto de mais fácil manutenção.
+
+
+Quais as diferenças entre Arquitetura Hexagonal e Clean Architecture?
+
+A diferença entre os dois padrões de projeto está no seu objetivo principal: enquanto a arquitetura hexagonal se preocupa apenas em isolar o domain de todo o resto da aplicação, a clean architecture separa seus componentes em camadas, com cada camada sendo independente da outra.
+
+
+Na sua opinião, a Arquitetura Hexagonal pode ser utilizada em qualquer tipo de projeto ? Quais informações devem ser consideradas antes de desenvolver sistemas usando esse padrão de projeto?
+
+A arquitetura hexagonal deve ser utilizada em projetos escaláveis e que necessitem de alta flexibilidade, podendo assim se valer dos principais recursos que o modelo proporciona. Por demandar maior complexidade de desenvolvimento, o projeto também deve contar com desenvolvedores suficientes para tal.
+Fatores a serem considerados antes de implementar a arquitetura hexagonal devem incluir a perspectiva futura do projeto, o quanto se espera que ele cresça, se tecnologias (como o banco de dados, por exemplo) vão mudar no futuro, o tamanho em si do projeto, o quanto se espera gastar com manutenção de código e a quantidade de mão de obra/tempo disponível para o desenvolvimento.
