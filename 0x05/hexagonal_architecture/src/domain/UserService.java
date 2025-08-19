@@ -19,11 +19,11 @@ public class UserService {
 
 
     public User getUser(String id) {
-        //implemente o metodo
+        return userRepository.findById(id);
     }
 
 
     public List<User> listUsers() {
-        //implemente o metodo
+        return userRepository.findAll();
     }
 }
