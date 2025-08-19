@@ -14,7 +14,7 @@ public class UserService {
 
 
     public void createUser(String id, String name) {
-        //implemente o metodo
+        this.userRepository.save(new User(id, name));
     }
 
 
